@@ -1,0 +1,146 @@
+html{
+  background: #000000;
+}
+
+.App {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.searchbox {
+  position: sticky;
+  top: 0;
+  background: black;
+  padding: 20px 0;
+  display: flex;
+}
+
+.searchbox input{
+  flex: 8;
+  padding: 10px 0;
+  display: inline-block;
+  padding-left: 20px;
+  border-color: transparent;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.searchbox input:focus,
+.searchbox button:focus{
+  outline: none;
+}
+
+.searchbox button{
+  flex: 2;
+  padding: 12px 0;
+  display: inline-block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: coral;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2 ease;
+}
+
+.searchbox button:hover{
+  background-color: #e65e2b;
+}
+
+.toprep-wrapper{
+  border: 4px solid coral;
+  border-radius: 10px;
+  margin: 15px auto;
+  background: #eee;
+  display: flex;
+}
+
+#section1{
+  flex-basis: 13%;
+  height: 100px;
+  overflow: hidden;
+  margin: auto 40px;
+}
+
+#section2{
+  margin: 20px 0;
+}
+
+#section1 img{
+  display: block;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#section2 div{
+  line-height: 2;
+}
+
+.repname{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.toprep-sections a{
+  color: black;
+  text-decoration: none;
+}
+
+.toprep-sections a:hover{
+  text-decoration: underline;
+}
+
+.empty_results{
+  font-size: 24px;
+  color: white;
+}
+
+.Danger{
+  color: crimson;
+  font-size: 40px;
+}
+
+.pages{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pages div{
+  color: white;
+  display: inline-block;
+  width: 100px;
+}
+
+.pages button{
+  width: 100px;
+  height: 30px;
+  background-color: lightskyblue;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+}
+
+.pages button:disabled{
+  cursor: not-allowed;
+}
+
+.message{
+  color: coral;
+  font-size: 24px;
+}
+
+.results-message{
+  font-size: 18px;
+}
+
+.loading-message{
+  text-align: center;
+  margin: 10px auto;
+}
+
+.repinfo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}

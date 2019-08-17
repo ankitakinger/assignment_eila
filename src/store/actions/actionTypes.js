@@ -1,0 +1,5 @@
+export const FETCH_REPOSITORIES = "FETCH_REPOSITORIES";
+export const FETCHING = "FETCHING";
+export const UPDATE_SEARCH = "UPDATE_SEARCH";
+export const UPDATE_PAGE = "UPDATE_PAGE";
+export const FETCH_FAILED = 'FETCH_FAILED';
