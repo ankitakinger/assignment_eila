@@ -39,7 +39,7 @@ export const fetchFailed = (err) => {
 export const fetchRepositories = (search, page = 1) => {
     return dispatch => {
         dispatch(fetchingRepositories());
-        axios.get(`https://api.github.com/search/repositories?q=${search?`language: ${search}`:`forks:>1`}&page=${page}&per_page=20&sort=forks&order=desc`)
+        axios.get(`https://api.github.com/search/repositories?q=${search?`language:${search}`:`forks:>1`}&page=${page}&per_page=20&sort=forks&order=desc`)
             .then( repos => {
                 let result = repos.data.items;
                 let total_count = repos.data.total_count;
