@@ -4,7 +4,7 @@ html{
 
 .App {
   margin: 0 auto;
-  width: 800px;
+  width: 95%;
 }
 
 .searchbox {
@@ -56,14 +56,15 @@ html{
 }
 
 #section1{
-  flex-basis: 13%;
-  height: 100px;
+  flex-basis: 28%;
+  height: 80px;
   overflow: hidden;
-  margin: auto 40px;
+  margin: auto 20px;
 }
 
 #section2{
   margin: 20px 0;
+  flex-basis: 62%;
 }
 
 #section1 img{
@@ -85,6 +86,7 @@ html{
 .toprep-sections a{
   color: black;
   text-decoration: none;
+  word-break: break-word;
 }
 
 .toprep-sections a:hover{
@@ -139,8 +141,22 @@ html{
   margin: 10px auto;
 }
 
-.repinfo{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+@media only screen and (min-width: 768px){
+  
+  .App {
+    width: 800px;
+  }
+
+  #section1{
+    flex-basis: 13%;
+    height: 100px;
+    margin: auto 40px;
+  }
+
+  .repinfo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  }
+
 }
